@@ -2,6 +2,7 @@ require_relative("grocery_store")
 require_relative("product")
 require_relative("order_item")
 require_relative("customer")
+require_relative("order")
 
 store = GroceryStore.new("Big Bazaar")
 
@@ -25,6 +26,9 @@ customer_order = GroceryStore.take_customer_input
 customer1 = Customer.new(customer_order,store)
 customer1.generate_item
 
+order = Order.new(customer1)
+
+order.generate_bill
 
 
 

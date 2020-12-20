@@ -25,6 +25,6 @@ class Customer
                 invalid << item
             end
         end
-        return [valid_items,invalid]
+        # return [valid_items,invalid]
     end
 end
